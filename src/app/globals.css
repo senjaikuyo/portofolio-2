@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-light: #e7e7e7;
+  --color-bg-dark: #1e1e1e;
+  --color-accent-lime: #cae83a;
+  --color-accent-lime-hover: #d4f534;
+  --color-text-dark: #1e1e1e;
+  --color-text-light: #e7e7e7;
+  --color-muted: #888888;
+}
+
+@layer base {
+  :root {
+    --background: var(--color-bg-light);
+    --foreground: var(--color-text-dark);
+  }
+
+  .dark {
+    --background: var(--color-bg-dark);
+    --foreground: var(--color-text-light);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply transition-colors duration-500;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Custom Selection */
+::selection {
+  background-color: var(--color-accent-lime);
+  color: var(--color-text-dark);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Button hover fill effect */
+.btn-hover-fill {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-hover-fill::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-accent-lime);
+  z-index: -1;
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+  transform: translateY(0);
+}
+
+.btn-hover-fill:hover::before {
+  transform: translateY(-100%);
+}
+
+.btn-hover-fill:hover {
+  color: var(--color-text-dark);
+}
