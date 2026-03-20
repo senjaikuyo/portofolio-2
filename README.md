@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+You can go to https://portofolio-2-tan.vercel.app/ too
+
 First, run the development server:
 
 ```bash
