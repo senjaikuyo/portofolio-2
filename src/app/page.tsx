@@ -59,7 +59,7 @@ export default function Home() {
             transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
             className="w-full md:w-2/5 flex justify-center md:justify-end"
           >
-            <div className="relative w-[300px] h-[400px] md:w-[400px] md:h-[500px] rounded-[100px] overflow-hidden border-2 border-text-dark bg-text-dark/5">
+            <div className="relative w-full max-w-[280px] aspect-[3/4] md:max-w-none md:w-[400px] md:h-[500px] rounded-[80px] md:rounded-[100px] overflow-hidden border-2 border-text-dark bg-text-dark/5 mx-auto">
               <Image 
                 src="https://picsum.photos/800/1000?random=10" 
                 alt="Rasya Zildan Avatar" 
@@ -120,8 +120,8 @@ export default function Home() {
               { title: "BACKEND", desc: "Designing robust APIs, database schemas, and scalable server architectures.", icon: <Database size={48}/> },
               { title: "MOBILE", desc: "Creating cross-platform mobile applications that deliver native-like experiences.", icon: <Smartphone size={48}/> }
             ].map((service, idx) => (
-              <AnimatedSection key={idx} delay={idx * 0.2}>
-                <div className="bg-white p-10 md:p-12 rounded-[40px] shadow-sm border border-text-dark/5 hover:-translate-y-2 transition-transform duration-300 h-full flex flex-col">
+              <AnimatedSection key={idx} delay={idx * 0.2} className="h-full">
+                <div className="bg-white p-8 md:p-12 rounded-[40px] shadow-sm border border-text-dark/5 hover:-translate-y-2 transition-transform duration-300 h-full flex flex-col">
                   <div className="text-accent-lime mb-8">
                     {service.icon}
                   </div>
@@ -135,9 +135,9 @@ export default function Home() {
       </section>
 
       {/* FEATURED WORKS SECTION (Dark Theme) */}
-      <section className="bg-bg-dark text-text-light py-32 px-6 md:px-12 rounded-[60px] md:rounded-[120px] mx-2 gap-y-12 mb-32">
+      <section className="bg-bg-dark text-text-light py-24 md:py-32 px-6 md:px-12 rounded-[40px] md:rounded-[120px] mx-4 md:mx-8 gap-y-12 mb-32">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
             <AnimatedSection>
               <h2 className="text-5xl md:text-7xl font-black tracking-tighter">SELECTED WORKS</h2>
             </AnimatedSection>

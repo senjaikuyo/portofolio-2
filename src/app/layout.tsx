@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scrollbar-hide">
-      <body className={`${inter.className} antialiased selection:bg-accent-lime selection:text-text-dark`}>
+      <body className={`${inter.className} antialiased selection:bg-accent-lime selection:text-text-dark overflow-x-hidden`}>
         <Navigation />
         <main>{children}</main>
         <Footer />

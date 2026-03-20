@@ -96,7 +96,7 @@ export default function AboutMe() {
                             </div>
                             
                             {/* Mobile Year */}
-                            <div className="md:hidden pl-24 -mt-4 mb-8">
+                            <div className="md:hidden pl-24 mt-2 mb-8">
                                 <span className="text-xl font-bold tracking-wide text-text-light/50">{item.year}</span>
                             </div>
 

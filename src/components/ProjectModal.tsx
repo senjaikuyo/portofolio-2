@@ -41,9 +41,9 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
               </button>
             </div>
 
-            <div className="flex-1 overflow-y-auto p-8 md:p-16 hide-scrollbar flex flex-col md:flex-row gap-12">
-                <div className="w-full md:w-1/2 flex flex-col gap-8">
-                    <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-text-dark leading-none">
+            <div className="flex-1 overflow-y-auto p-6 md:p-16 hide-scrollbar flex flex-col md:flex-row gap-8 md:gap-12 mt-8 md:mt-0">
+                <div className="w-full md:w-1/2 flex flex-col gap-6 md:gap-8 pr-8 md:pr-0">
+                    <h2 className="text-3xl md:text-6xl font-black tracking-tighter text-text-dark leading-none">
                         {project.title}
                     </h2>
                     
@@ -71,7 +71,7 @@ export default function ProjectModal({ project, isOpen, onClose }: Props) {
                     </div>
                 </div>
 
-                <div className="w-full md:w-1/2 rounded-[40px] overflow-hidden bg-text-dark/5 min-h-[400px] relative">
+                <div className="w-full md:w-1/2 rounded-[24px] md:rounded-[40px] overflow-hidden bg-text-dark/5 min-h-[300px] md:min-h-[400px] relative mt-4 md:mt-0">
                     <Image src={project.image} alt={project.title} fill className="object-cover" />
                 </div>
             </div>
