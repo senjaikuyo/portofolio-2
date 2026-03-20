@@ -35,7 +35,7 @@ export const projects: Project[] = [
   },
   {
     id: "ihsg-screener",
-    title: "IHSG Stock Screener",
+    title: "IHSG Stock Screener (2025)",
     description: "Skrip penyaring data fundamental untuk menganalisis emiten di pasar saham Indonesia berbasis analisis kuantitatif.",
     image: "https://picsum.photos/1200/800?random=3",
     stack: ["Python", "Pandas", "Data Analysis"],
