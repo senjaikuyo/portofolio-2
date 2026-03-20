@@ -15,10 +15,10 @@ export default function Footer() {
             I&apos;m currently available for freelance work. If you have a project that you want to get started, think you need my help with something, then get in touch.
           </p>
           <Link
-            href="mailto:rasyazildan@example.com"
+            href="mailto:afifhsiregar@gmail.com"
             className="inline-flex items-center gap-2 text-xl font-bold hover:text-accent-lime transition-colors group"
           >
-            hello@rasyazildan.my.id
+            hello@afifhsiregar.dev
             <ArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </Link>
         </div>
@@ -41,16 +41,16 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto pt-12 flex flex-col md:flex-row justify-between items-center gap-6">
-        <p className="text-muted">© {new Date().getFullYear()} Rasya Zildan. All rights reserved.</p>
+        <p className="text-muted">© {new Date().getFullYear()} Afif Hamzah Siregar. All rights reserved.</p>
         <p className="text-muted flex items-center gap-2">
-          Designed with <span className="text-accent-lime">♥</span> by Rasya
+          Designed with <span className="text-accent-lime">♥</span> by Afif
         </p>
       </div>
 
       {/* Massive Background Text */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center opacity-[0.03] pointer-events-none select-none overflow-hidden flex justify-center">
         <h1 className="text-[20vw] font-black tracking-tighter leading-none whitespace-nowrap">
-          RASYA ZILDAN
+          AFIF HAMZAH
         </h1>
       </div>
     </footer>

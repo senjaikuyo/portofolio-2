@@ -27,9 +27,9 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
             >
-              <h2 className="text-xl md:text-2xl font-bold uppercase tracking-widest text-text-dark/60 mb-2">Hi! i&apos;m Rasya</h2>
+              <h2 className="text-xl md:text-2xl font-bold uppercase tracking-widest text-text-dark/60 mb-2">Hi! i&apos;m Afif</h2>
               <h1 className="text-6xl md:text-[7vw] font-black tracking-tighter leading-[0.9] text-text-dark">
-                FULL-STACK <br/> DEVELOPER
+                FULL-STACK <br/> ENTHUSIAST
               </h1>
             </motion.div>
             
@@ -39,7 +39,7 @@ export default function Home() {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-lg md:text-2xl max-w-xl text-text-dark/80 font-medium leading-relaxed mt-4"
             >
-              I build digital experiences that are fast, accessible, and visually compelling. Based in Malang, ID.
+              I build digital experiences that are fast, accessible, and database-driven. Software Engineering Student at Politeknik Negeri Batam.
             </motion.p>
             
             <motion.div 
@@ -62,7 +62,7 @@ export default function Home() {
             <div className="relative w-full max-w-[280px] aspect-[3/4] md:max-w-none md:w-[400px] md:h-[500px] rounded-[80px] md:rounded-[100px] overflow-hidden border-2 border-text-dark bg-text-dark/5 mx-auto">
               <Image 
                 src="https://picsum.photos/800/1000?random=10" 
-                alt="Rasya Zildan Avatar" 
+                alt="Afif Hamzah Siregar Avatar" 
                 fill 
                 className="object-cover" 
                 priority
@@ -84,7 +84,7 @@ export default function Home() {
           </div>
           <div className="md:w-2/3">
             <p className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-              I specialize in developing Software applications and scalable backends that help businesses grow and operate efficiently.
+              I specialize in building practical, user-centric web applications and managing complex relational databases using PHP, MySQL, and Python.
             </p>
           </div>
         </AnimatedSection>
@@ -100,7 +100,7 @@ export default function Home() {
           >
             {[...Array(4)].map((_, i) => (
               <span key={i} className="flex items-center gap-8 mx-4">
-                SOFTWARE ENGINEER <ArrowDownRight size={48} /> MOBILE DEVELOPER <ArrowDownRight size={48} /> 
+                FULL-STACK ENTHUSIAST <ArrowDownRight size={48} /> PHP \u0026 MYSQL <ArrowDownRight size={48} /> TRPL POLIBATAM <ArrowDownRight size={48} /> 
               </span>
             ))}
           </motion.div>
@@ -116,9 +116,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "FRONTEND", desc: "Building responsive, accessible, and high-performance user interfaces.", icon: <Layers size={48}/> },
-              { title: "BACKEND", desc: "Designing robust APIs, database schemas, and scalable server architectures.", icon: <Database size={48}/> },
-              { title: "MOBILE", desc: "Creating cross-platform mobile applications that deliver native-like experiences.", icon: <Smartphone size={48}/> }
+              { title: "FRONTEND", desc: "Crafting intuitive user interfaces with modern frameworks like React and Tailwind.", icon: <Layers size={48}/> },
+              { title: "BACKEND", desc: "Building secure server-side logic and managing databases with PHP and MySQL.", icon: <Database size={48}/> },
+              { title: "DATA ANALYST", desc: "Analyzing stock market data (IHSG) and identifying trends with Python.", icon: <Smartphone size={48}/> }
             ].map((service, idx) => (
               <AnimatedSection key={idx} delay={idx * 0.2} className="h-full">
                 <div className="bg-white p-8 md:p-12 rounded-[40px] shadow-sm border border-text-dark/5 hover:-translate-y-2 transition-transform duration-300 h-full flex flex-col">

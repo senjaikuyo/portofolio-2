@@ -49,29 +49,29 @@ export default function AboutMe() {
         <div className="flex flex-col md:flex-row gap-16 items-start">
             <AnimatedSection className="w-full md:w-2/5" delay={0.2}>
                 <div className="aspect-[4/5] rounded-[60px] overflow-hidden sticky top-32 bg-text-dark/5">
-                    <Image src="https://picsum.photos/800/1000?random=11" alt="Rasya Zildan" fill className="object-cover" />
+                    <Image src="https://picsum.photos/800/1000?random=11" alt="Afif Hamzah Siregar" fill className="object-cover" />
                 </div>
             </AnimatedSection>
 
             <div className="w-full md:w-3/5 flex flex-col gap-12 relative z-10">
                 <AnimatedSection delay={0.3}>
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
-                        I am a developer who is passionate about creating <span className="text-accent-lime bg-text-dark px-2 rounded-lg">efficient</span> and <span className="text-accent-lime bg-text-dark px-2 rounded-lg">scalable</span> solutions.
+                        I am a Software Engineering student at <span className="text-accent-lime bg-text-dark px-2 rounded-lg">Polibatam</span> specializing in <span className="text-accent-lime bg-text-dark px-2 rounded-lg">Full-stack</span> development.
                     </h2>
                     <p className="text-lg md:text-xl text-text-dark/80 leading-relaxed font-medium">
-                        Since starting my journey as a developer, I&apos;ve worked on a variety of projects ranging from mobile applications to complex enterprise backends. I believe in writing clean, maintainable code and building products that actually solve problems. 
+                        I specialize in building practical, user-centric web applications and managing complex relational databases (MySQL). Through academic Problem-Based Learning (PBL) and independent projects, I have developed hands-on experience in PHP, React, Python, and system design. I am also actively exploring advanced data analysis and stock market (IHSG) screening.
                     </p>
                 </AnimatedSection>
 
                 {/* STATS */}
                 <AnimatedSection delay={0.4} className="grid grid-cols-2 gap-8 py-8 border-y-2 border-text-dark/10">
                     <div>
-                        <h4 className="text-6xl font-black text-text-dark tracking-tighter mb-2">2+</h4>
+                        <h4 className="text-6xl font-black text-text-dark tracking-tighter mb-2">1+</h4>
                         <p className="text-text-dark/60 font-bold tracking-widest uppercase">Years Experience</p>
                     </div>
                     <div>
-                        <h4 className="text-6xl font-black text-text-dark tracking-tighter mb-2">15+</h4>
-                        <p className="text-text-dark/60 font-bold tracking-widest uppercase">Projects Completed</p>
+                        <h4 className="text-6xl font-black text-text-dark tracking-tighter mb-2">5+</h4>
+                        <p className="text-text-dark/60 font-bold tracking-widest uppercase">Dedicated Projects</p>
                     </div>
                 </AnimatedSection>
 

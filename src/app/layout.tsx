@@ -8,8 +8,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"] });
 
 export const metadata: Metadata = {
-  title: "Rasya Zildan | Fullstack Developer",
-  description: "Personal portfolio of Rasya Zildan, Fullstack & Mobile Developer.",
+  title: "Afif Hamzah Siregar | Fullstack Enthusiast",
+  description: "Personal portfolio of Afif Hamzah Siregar, Software Engineering Student at Politeknik Negeri Batam.",
 };
 
 import { Viewport } from "next";

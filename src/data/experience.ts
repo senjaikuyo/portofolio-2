@@ -1,23 +1,24 @@
 export const timeline = [
   {
-    year: "Jan 2025 – Present",
-    title: "Trivox Studio",
-    subtitle: "Backend, Frontend & Mobile Developer (Full Time)",
+    year: "2023 – Present",
+    title: "Politeknik Negeri Batam",
+    subtitle: "Teknologi Rekayasa Perangkat Lunak (TRPL)",
     description:
-      "Delivered end-to-end solutions across web and mobile projects, building scalable backends, intuitive frontends, and AI-driven features to support diverse studio client needs.",
+      "Mahasiswa aktif Semester 2 dengan fokus pada pengembangan web full-stack dan arsitektur basis data. Aktif dalam kegiatan Problem-Based Learning (PBL).",
   },
   {
-    year: "Jan 2025 – Dec 2025",
-    title: "PaperPlay Studio",
-    subtitle: "Backend & Mobile Developer (Intern)",
+    year: "2024",
+    title: "Virtual Exhibition (V-EX) System",
+    subtitle: "PBL Polibatam (Lead Developer / UI Design)",
     description:
-      "Improved system scalability and reliability by developing core SaaS features with NestJS and Laravel, implementing Docker-based CI/CD pipelines, and conducting performance testing using K6 and JMeter.",
+      "Merancang arsitektur sistem dan antarmuka galeri virtual. Membangun ERD kompleks dengan sistem Role-Based Access Control (RBAC) untuk admin, dosen, dan ketua PBL.",
   },
   {
-    year: "Jul 2023 – Present",
-    title: "SMK Negeri 4 Malang",
-    subtitle: "Software Engineering Student (Rekayasa Perangkat Lunak)",
+    year: "2023",
+    title: "KasWarga",
+    subtitle: "Community Financial App",
     description:
-      "Strengthening software engineering fundamentals through hands-on projects, collaborative development, and continuous learning in backend, frontend, and mobile technologies.",
+      "Membangun aplikasi manajemen keuangan warga end-to-end menggunakan PHP dan MySQL. Mengamankan data melalui sistem autentikasi mandiri dengan hashing password.",
   },
 ];
+

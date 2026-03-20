@@ -33,7 +33,7 @@ export default function Navigation() {
         } px-6 md:px-12 flex justify-between items-center`}
       >
         <Link href="/" className="text-2xl font-black tracking-tighter mix-blend-difference text-white z-50">
-          RASYA.
+          AFIF.
         </Link>
 
         {/* Desktop Nav */}
@@ -64,11 +64,12 @@ export default function Navigation() {
         {/* Contact Button Desktop */}
         <div className="hidden md:block">
           <Link
-            href="mailto:rasyazildan@example.com"
-            className="px-6 py-3 rounded-full bg-text-dark text-bg-light font-medium btn-hover-fill mix-blend-difference border border-transparent hover:border-text-dark hover:text-text-dark inline-block transition-all"
-          >
-            Let&apos;s Talk
-          </Link>
+                 href="mailto:afifhsiregar@gmail.com"
+                 className="px-8 py-4 rounded-full bg-accent-lime text-text-dark font-bold text-xl inline-block"
+                 onClick={() => setIsOpen(false)}
+                 >
+                 Let&apos;s Talk
+                 </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -116,7 +117,7 @@ export default function Navigation() {
                className="mt-8"
             >
                 <Link
-                href="mailto:rasyazildan@example.com"
+                href="mailto:afifhsiregar@gmail.com"
                 className="px-8 py-4 rounded-full bg-accent-lime text-text-dark font-bold text-xl inline-block"
                 onClick={() => setIsOpen(false)}
                 >
