@@ -1,13 +1,39 @@
 "use client";
 
+import { motion, useScroll, useTransform } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import { timeline } from "@/data/experience";
 import { skills } from "@/data/skills";
 import Image from "next/image";
+import { useRef } from "react";
 
 export default function AboutMe() {
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  });
+  
+  // Parallax effect: line moves down slower than scrolling
+  const lineY = useTransform(scrollYProgress, [0, 1], [-50, 300]);
+
   return (
-    <div className="min-h-screen bg-bg-light pt-32 pb-20 selection:bg-accent-lime selection:text-text-dark">
+    <div ref={containerRef} className="min-h-screen relative bg-bg-light pt-32 pb-20 overflow-hidden selection:bg-accent-lime selection:text-text-dark">
+      
+      {/* DECORATIVE YELLOW LINE (PARALLAX) */}
+      <motion.div 
+        style={{ y: lineY }}
+        className="absolute top-[20%] right-[-20%] md:right-[5%] w-[400px] h-[600px] md:w-[600px] md:h-[800px] pointer-events-none z-0 opacity-80"
+      >
+        <svg viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full text-accent-lime drop-shadow-md">
+          <path 
+            d="M50 0 C 150 100, -50 200, 150 300 C 250 350, 100 400, 150 450" 
+            stroke="currentColor" 
+            strokeWidth="8" 
+            strokeLinecap="round"
+          />
+        </svg>
+      </motion.div>
       
       {/* HEADER SECTION */}
       <section className="px-6 md:px-12 mb-20 max-w-7xl mx-auto">
@@ -27,7 +53,7 @@ export default function AboutMe() {
                 </div>
             </AnimatedSection>
 
-            <div className="w-full md:w-3/5 flex flex-col gap-12">
+            <div className="w-full md:w-3/5 flex flex-col gap-12 relative z-10">
                 <AnimatedSection delay={0.3}>
                     <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
                         I am a developer who is passionate about creating <span className="text-accent-lime bg-text-dark px-2 rounded-lg">efficient</span> and <span className="text-accent-lime bg-text-dark px-2 rounded-lg">scalable</span> solutions.

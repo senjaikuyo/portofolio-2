@@ -18,7 +18,7 @@ export default function Home() {
     <div className="min-h-screen bg-bg-light selection:bg-accent-lime selection:text-text-dark">
       
       {/* HERO SECTION */}
-      <section className="relative min-h-screen pt-32 pb-20 px-6 md:px-12 flex flex-col justify-center overflow-hidden">
+      <section className="relative min-h-screen pt-32 pb-40 md:pb-20 px-6 md:px-12 flex flex-col justify-center overflow-hidden">
         <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center gap-12 z-10">
           
           <div className="w-full md:w-3/5 flex flex-col gap-6">
