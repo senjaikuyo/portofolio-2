@@ -49,7 +49,7 @@ export default function AboutMe() {
         <div className="flex flex-col md:flex-row gap-16 items-start">
             <AnimatedSection className="w-full md:w-2/5" delay={0.2}>
                 <div className="aspect-[4/5] rounded-[60px] overflow-hidden sticky top-32 bg-text-dark/5">
-                    <Image src="https://picsum.photos/800/1000?random=11" alt="Afif Hamzah Siregar" fill className="object-cover" />
+                    <Image src="https://picsum.photos/800/1000?random=11" alt="src=Hamzah Siregar" fill className="object-cover" />
                 </div>
             </AnimatedSection>
 
