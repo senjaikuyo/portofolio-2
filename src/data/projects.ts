@@ -26,7 +26,7 @@ export const projects: Project[] = [
     id: "kaswarga-app",
     title: "KasWarga Management App",
     description: "Aplikasi manajemen keuangan warga end-to-end dengan sistem autentikasi mandiri dan hashing password.",
-    image: "image.png",
+    image: "kaswarga.png",
     stack: ["PHP", "MySQL", "Bootstrap", "Git"],
     category: "web",
     demoUrl: "#",
